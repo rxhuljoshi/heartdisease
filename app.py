@@ -1,11 +1,11 @@
 import streamlit as st
 import os
-import numpy as np
+# Removed unused import
 import matplotlib.pyplot as plt
 from matplotlib.patches import Arc, Circle
 import librosa.display
 from model import load_model, predict
-from utils import process_audio_file, get_prediction_label, get_condition_description
+from utils import process_audio_file, get_condition_description
 from datetime import datetime
 import pandas as pd
 
@@ -87,7 +87,7 @@ def main():
                     # Display waveform
                     st.subheader("Audio Waveform")
                     audio, sr = librosa.load(temp_path)
-                    fig_wave, ax_wave = plt.subplots(figsize=(10, 3))
+                    fig_wave, _ = plt.subplots(figsize=(10, 3))  # Removed unused variable 'ax_wave'
                     librosa.display.waveshow(audio, sr=sr)
                     plt.title("Waveform")
                     plt.tight_layout()
