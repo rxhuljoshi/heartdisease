@@ -1,0 +1,4 @@
+patient_name,patient_id,age,gender,date,symptoms,prediction,confidence,timestamp
+,,30,Male,2025-04-28,,Normal,94.00%,2025-04-28 04:33:12
+,,30,Male,2025-04-28,,Extrasystole,87.00%,2025-04-28 04:44:58
+,,30,Male,2025-04-28,,Extrasystole,92.00%,2025-04-28 04:48:00
